@@ -1,5 +1,13 @@
 ---
 
+- name: assert | Test tfe_image
+  ansible.builtin.assert:
+    that:
+      - tfe_image is defined
+      - tfe_image is string
+      - tfe_image is not none
+    quiet: yes
+
 - name: assert | Test tfe_license
   ansible.builtin.assert:
     that:

@@ -54,6 +54,10 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 # defaults file for tfe
 
+# Select the image to use for Terraform Enterprise. This includes the version.
+# The latest tfe version can be found [here](https://developer.hashicorp.com/terraform/enterprise/releases/2023/v202303-1).
+tfe_image: "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202309-1"
+
 # Paste the license of Terraform Enterprise here. It's a long string.
 # If the license is not set, may tasks will be skipped, resulting in a non-working
 # Terraform Enterprise instance. Not setting a license can help with testing.

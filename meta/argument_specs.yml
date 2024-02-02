@@ -7,6 +7,10 @@ argument_specs:
       Install and configure tfe on your system.
     author: Robert de Bock
     options:
+      tfe_image:
+        type: "str"
+        default: "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202309-1"
+        description: "Select the image to use for Terraform Enterprise. This includes the version."
       tfe_license:
         type: "str"
         default: "XYZ123"
