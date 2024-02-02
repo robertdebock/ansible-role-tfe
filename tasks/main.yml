@@ -14,6 +14,7 @@
     password: "{{ tfe_license }}"
   when:
     - tfe_license is defined
+    - tfe_license != ""
 
 - name: Create /etc/terraform-enterprise/certs
   ansible.builtin.file:
@@ -69,6 +70,7 @@
     mode: '0400'
   when:
     - tfe_license is defined
+    - tfe_license != ""
   notify:
     - Restart terraform-enterprise
 
@@ -92,3 +94,4 @@
     enabled: true
   when:
     - tfe_license is defined
+    - tfe_license != ""

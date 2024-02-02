@@ -12,3 +12,4 @@
     state: restarted
   when:
     - tfe_license is defined
+    - tfe_license != ""

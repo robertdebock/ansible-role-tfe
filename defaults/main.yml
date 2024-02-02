@@ -6,9 +6,9 @@
 tfe_image: "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202309-1"
 
 # Paste the license of Terraform Enterprise here. It's a long string.
-# If the license is not set, may tasks will be skipped, resulting in a non-working
+# If the license is not set or empty, may tasks will be skipped, resulting in a non-working
 # Terraform Enterprise instance. Not setting a license can help with testing.
-# tfe_license: "XYZ123"
+tfe_license: ""
 
 # Configure a hostname, used to redirect HTTP(S) requests.
 tfe_hostname: "tfe.example.com"
