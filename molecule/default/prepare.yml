@@ -6,6 +6,7 @@
 
   roles:
     - role: robertdebock.bootstrap
+    - role: robertdebock.core_dependencies
     - role: robertdebock.docker_ce
     - role: robertdebock.docker_compose
 
