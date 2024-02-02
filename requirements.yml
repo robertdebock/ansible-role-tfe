@@ -1,0 +1,8 @@
+---
+roles:
+  - name: robertdebock.bootstrap
+  - name: robertdebock.docker_ce
+  - name: robertdebock.docker_compose
+
+collections:
+  - name: community.docker
