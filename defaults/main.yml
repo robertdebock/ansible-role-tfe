@@ -49,3 +49,7 @@ tfe_object_storage_s3_region: "eu-west-1"
 # Details on the Redis host. This host should already exist, this role
 # does not create a Redis instance.
 tfe_redis_host: "tfe.RaNdOm.0001.euw1.cache.amazonaws.com"
+tfe_redis_user: "tfe"
+tfe_redis_password: "my_pass_c0mpl.x"
+tfe_redis_use_tls: no
+tfe_redis_use_auth: no
