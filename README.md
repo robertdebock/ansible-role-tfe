@@ -108,6 +108,9 @@ tfe_redis_user: "tfe"
 tfe_redis_password: "my_pass_c0mpl.x"
 tfe_redis_use_tls: no
 tfe_redis_use_auth: no
+
+# The internal Vault requires an internal address of the node.
+tfe_vault_cluster_address: "{{ ansible_default_ipv4.address }}:8201"
 ```
 
 ## [Requirements](#requirements)

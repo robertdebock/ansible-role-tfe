@@ -30,6 +30,7 @@ services:
       TFE_REDIS_PASSWORD: "${TFE_REDIS_PASSWORD}"
       TFE_REDIS_USE_TLS: "${TFE_REDIS_USE_TLS}"
       TFE_REDIS_USE_AUTH: "${TFE_REDIS_USE_AUTH}"
+      TFE_VAULT_CLUSTER_ADDRESS: "${TFE_VAULT_CLUSTER_ADDRESS}"
     cap_add:
       - IPC_LOCK
     read_only: true
