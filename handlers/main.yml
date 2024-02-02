@@ -10,3 +10,5 @@
   ansible.builtin.service:
     name: terraform-enterprise
     state: restarted
+  when:
+    - tfe_license is defined
