@@ -27,7 +27,7 @@
 - name: Place TLS material
   ansible.builtin.copy:
     src: "{{ item.name }}"
-    dest: /etc/terraform-enterprise/certs/{{ item.name }}
+    dest: /etc/terraform-enterprise/certs/{{ item.name | basename }}
     owner: root
     group: root
     mode: "{{ item.mode }}"
