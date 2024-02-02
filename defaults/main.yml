@@ -39,6 +39,7 @@ tfe_database_host: "tfe.RaNdOm.eu-west-1.rds.amazonaws.com"
 tfe_database_user: "tfe"
 tfe_database_password: "my_pass_c0mpl.x"
 tfe_database_name: "tfe"
+tfe_database_parameters: "sslmode=disable"
 
 # Detail on the object storage. This role does not create the bucket.
 tfe_object_storage_s3_bucket: "SomeBucketName"

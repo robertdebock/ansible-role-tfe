@@ -55,6 +55,10 @@ argument_specs:
         type: "str"
         default: "tfe"
         description: "A database name."
+      tfe_database_parameters:
+        type: "str"
+        default: "sslmode=disable"
+        description: "A database parameter."
       tfe_object_storage_s3_bucket:
         type: "str"
         default: "SomeBucketName"

@@ -96,6 +96,14 @@
       - tfe_database_name is not none
     quiet: yes
 
+- name: assert | Test tfe_database_parameters
+  ansible.builtin.assert:
+    that:
+      - tfe_database_parameters is defined
+      - tfe_database_parameters is string
+      - tfe_database_parameters is not none
+    quiet: yes
+
 - name: assert | Test tfe_object_storage_s3_bucket
   ansible.builtin.assert:
     that:
