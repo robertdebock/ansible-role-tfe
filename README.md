@@ -103,8 +103,8 @@ tfe_database_parameters: "sslmode=disable"
 tfe_object_storage_s3_endpoint: ""
 tfe_object_storage_s3_use_instance_profile: no
 tfe_object_storage_s3_bucket: "SomeBucketName"
-tfe_object_storage_s3_access_key_id: "xyz"
-tfe_object_storage_s3_secret_access_key: "xyz"
+tfe_object_storage_s3_access_key_id: ""
+tfe_object_storage_s3_secret_access_key: ""
 tfe_object_storage_s3_region: "eu-west-1"
 
 # Details on the Redis host. This host should already exist, this role
