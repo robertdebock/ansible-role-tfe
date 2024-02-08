@@ -104,6 +104,14 @@
       - tfe_database_parameters is not none
     quiet: yes
 
+- name: assert | Test tfe_object_storage_s3_endpoint
+  ansible.builtin.assert:
+    that:
+      - tfe_object_storage_s3_endpoint is defined
+      - tfe_object_storage_s3_endpoint is string
+      - tfe_object_storage_s3_endpoint is not none
+    quiet: yes
+
 - name: assert | Test tfe_object_storage_s3_bucket
   ansible.builtin.assert:
     that:
