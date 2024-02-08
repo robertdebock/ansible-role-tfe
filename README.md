@@ -101,6 +101,7 @@ tfe_database_parameters: "sslmode=disable"
 
 # Detail on the object storage. This role does not create the bucket.
 tfe_object_storage_s3_endpoint: ""
+tfe_object_storage_s3_use_instance_profile: no
 tfe_object_storage_s3_bucket: "SomeBucketName"
 tfe_object_storage_s3_access_key_id: "xyz"
 tfe_object_storage_s3_secret_access_key: "xyz"

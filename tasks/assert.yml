@@ -112,6 +112,14 @@
       - tfe_object_storage_s3_endpoint is not none
     quiet: yes
 
+- name: assert | Test tfe_object_storage_s3_use_instance_profile
+  ansible.builtin.assert:
+    that:
+      - tfe_object_storage_s3_use_instance_profile is defined
+      - tfe_object_storage_s3_use_instance_profile is boolean
+      - tfe_object_storage_s3_use_instance_profile is not none
+    quiet: yes
+
 - name: assert | Test tfe_object_storage_s3_bucket
   ansible.builtin.assert:
     that:
