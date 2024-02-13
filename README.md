@@ -91,6 +91,9 @@ tfe_tls_certificate: "cert.pem"
 tfe_tls_key: "key.pem"
 tfe_tls_bundle: "bundle.pem"
 
+# You can set the operational mode to either: "disk", "external" or "active-active".
+tfe_operational_mode: "active-active"
+
 # Details on the database host. This host should already exist, this role
 # does not create a database.
 tfe_database_host: "tfe.RaNdOm.eu-west-1.rds.amazonaws.com"

@@ -64,6 +64,15 @@
       - tfe_tls_bundle is not none
     quiet: yes
 
+- name: assert | Test tfe_operational_mode
+  ansible.builtin.assert:
+    that:
+      - tfe_operational_mode is defined
+      - tfe_operational_mode is string
+      - tfe_operational_mode is not none
+      - tfe_operational_mode in ["disk", "external", "active-active"]
+    quiet: yes
+
 - name: assert | Test tfe_database_host
   ansible.builtin.assert:
     that:
