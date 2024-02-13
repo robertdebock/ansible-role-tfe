@@ -73,7 +73,7 @@
       - tfe_operational_mode in ["disk", "external", "active-active"]
     quiet: yes
 
-- name: assert | tests for active-active or external
+- name: assert | Tests for active-active or external
   when:
     - tfe_operational_mode in ["active-active", "external"]
   block:
@@ -165,7 +165,7 @@
           - tfe_object_storage_s3_region is not none
         quiet: yes
 
-- name: assert | tests for active-active
+- name: assert | Tests for active-active
   when:
     - tfe_operational_mode in ["active-active"]
   block:
