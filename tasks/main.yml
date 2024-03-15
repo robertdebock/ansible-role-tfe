@@ -94,7 +94,7 @@
   ansible.builtin.service:
     name: terraform-enterprise
     state: started
-    enabled: true
+    enabled: yes
   when:
     - tfe_license is defined
     - tfe_license != ""
