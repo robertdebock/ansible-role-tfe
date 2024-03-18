@@ -1,8 +1,8 @@
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: robertdebock.bootstrap
@@ -16,4 +16,4 @@
       ansible.builtin.service:
         name: docker
         state: started
-        enabled: yes
+        enabled: true
