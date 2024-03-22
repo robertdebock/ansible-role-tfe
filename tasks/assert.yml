@@ -208,3 +208,11 @@
           - tfe_redis_use_auth is boolean
           - tfe_redis_use_auth is not none
         quiet: true
+
+    - name: assert | Test tfe_vault_cluster_address
+      ansible.builtin.assert:
+        that:
+          - tfe_vault_cluster_address is defined
+          - tfe_vault_cluster_address is string
+          - tfe_vault_cluster_address is not none
+        quiet: true

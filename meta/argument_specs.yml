@@ -95,3 +95,7 @@ argument_specs:
         type: "str"
         default: "tfe.RaNdOm.0001.euw1.cache.amazonaws.com"
         description: "A Redis hostname."
+      tfe_vault_cluster_address:
+        type: "str"
+        default: "https://ANSIBLE_DEFAULT_IP_V4.ADDRESS:8201"
+        description: "The internal Vault requires an internal address of the node."
