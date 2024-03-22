@@ -24,6 +24,16 @@
     group: root
     mode: '0775'
 
+- name: Create /var/lib/terraform-enterprise
+  ansible.builtin.file:
+    path: /var/lib/terraform-enterprise
+    state: directory
+    owner: root
+    group: root
+    mode: '0775'
+  when:
+    - tfe_operational_mode == "disk"
+
 - name: Place TLS material
   ansible.builtin.copy:
     src: "{{ item.name }}"
