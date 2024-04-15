@@ -17,6 +17,7 @@ services:
       TFE_TLS_KEY_FILE: "/etc/ssl/private/terraform-enterprise/key.pem"
       TFE_TLS_CA_BUNDLE_FILE: "/etc/ssl/private/terraform-enterprise/bundle.pem"
       TFE_IACT_SUBNETS: "${TFE_IACT_SUBNETS}"
+      TFE_CAPACITY_CONCURRENCY: "${TFE_CAPACITY_CONCURRENCY}"
 {% if tfe_operational_mode == "active-active" or tfe_operational_mode == "external" %}
       TFE_DATABASE_USER: "${TFE_DATABASE_USER}"
       TFE_DATABASE_PASSWORD: "${TFE_DATABASE_PASSWORD}"
