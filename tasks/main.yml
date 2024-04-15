@@ -81,9 +81,9 @@
     owner: root
     group: root
     mode: '0400'
-  when:
-    - tfe_license is defined
-    - tfe_license != ""
+  # when:
+  #   - tfe_license is defined
+  #   - tfe_license != ""
   notify:
     - Restart terraform-enterprise
 
