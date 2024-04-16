@@ -75,7 +75,7 @@ services:
 {% if tfe_log_forwarding_config_path is defined and tfe_log_forwarding_config_path != "" %}
       - type: bind
         source: ./fluent-bit
-        target: /etc/fluent-bit
+        target: /etc/terraform-enterprise/fluent-bit
 {% endif %}
 volumes:
   terraform-enterprise-cache:

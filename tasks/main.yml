@@ -81,7 +81,7 @@
 
 - name: Create /etc/terraform-enterprise/fluent-bit
   ansible.builtin.file:
-    path: /etc/terraform-enterprise/fluent-bit
+    path: "{{ tfe_log_forwarding_config_path | dirname}}"
     state: directory
     owner: root
     group: root
@@ -92,7 +92,7 @@
 - name: Place fluent-bit configuration
   ansible.builtin.copy:
     src: fluent-bit.conf
-    dest: /etc/terraform-enterprise/fluent-bit/fluent-bit.conf
+    dest: "{{ tfe_log_forwarding_config_path }}"
     owner: root
     group: root
     mode: "0644"

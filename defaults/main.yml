@@ -44,7 +44,9 @@ tfe_operational_mode: "active-active"
 tfe_capacity_concurrency: 10
 
 # Enable log forwarding by setting a path.
-tfe_log_forwarding_config_path: /etc/fluent-bit/fluent-bit.conf
+# The file (basename) will originate from this Ansible role, unless you have
+# a custom file in your `files/` directory of your playbook directory.
+tfe_log_forwarding_config_path: /etc/terraform-enterprise/fluent-bit/fluent-bit.conf
 
 # Details on the database host. This host should already exist, this role
 # does not create a database.
