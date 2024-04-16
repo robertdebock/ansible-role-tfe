@@ -43,6 +43,9 @@ tfe_operational_mode: "active-active"
 # Maximum number of Terraform runs that can execute concurrently on each Terraform Enterprise node.
 tfe_capacity_concurrency: 10
 
+# Enable log forwarding by setting a path.
+tfe_log_forwarding_config_path: /etc/fluent-bit/fluent-bit.conf
+
 # Details on the database host. This host should already exist, this role
 # does not create a database.
 # These variables are required when `tfe_operational_mode` is set to `active-active` or `external`.

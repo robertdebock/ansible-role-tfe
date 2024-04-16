@@ -51,6 +51,10 @@ argument_specs:
         type: "int"
         default: 10
         description: "Maximum number of Terraform runs that can execute concurrently on each Terraform Enterprise node."
+      tfe_log_forwarding_config_path:
+        type: "str"
+        default: "/etc/fluent-bit/fluent-bit.conf"
+        description: "The path to the log forwarding configuration."
       tfe_database_host:
         type: "str"
         default: "tfe.RaNdOm.eu-west-1.rds.amazonaws.com"
