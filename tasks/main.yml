@@ -79,7 +79,7 @@
   notify:
     - Restart terraform-enterprise
 
-- name: Create directory {{ tfe_log_forwarding_config_path }}
+- name: Create directory tfe_log_forwarding_config_path
   ansible.builtin.file:
     path: "{{ tfe_log_forwarding_config_path | dirname }}"
     state: directory
@@ -91,7 +91,7 @@
 
 - name: Place fluent-bit configuration
   ansible.builtin.copy:
-    src: fluent-bit.conf
+    src: "{{ tfe_log_forwarding_config_path | basename }}"
     dest: "{{ tfe_log_forwarding_config_path }}"
     owner: root
     group: root
