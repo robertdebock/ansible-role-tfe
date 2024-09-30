@@ -1,0 +1,15 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "tfe" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.core_dependencies" [fillcolor=green style=filled]
+    "robertdebock.docker_ce" [fillcolor=green style=filled]
+    "robertdebock.docker_compose" [fillcolor=green style=filled]
+  }
+  "tfe" -> "robertdebock.bootstrap"
+  "tfe" -> "robertdebock.core_dependencies"
+  "tfe" -> "robertdebock.docker_ce"
+  "tfe" -> "robertdebock.docker_compose"
+}
