@@ -35,13 +35,13 @@ jobs:
       matrix:
         distro:
           - image: "debian"
-            tag: "bullseye"
+            tag: "latest"
+          - image: "debian"
+            tag: "bookworm"
           - image: "enterpriselinux"
             tag: "latest"
           - image: "fedora"
-            tag: "38"
-          - image: "fedora"
-            tag: "39"
+            tag: "latest"
           - image: "ubuntu"
             tag: "latest"
           - image: "ubuntu"
